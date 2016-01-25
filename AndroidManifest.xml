@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.rapa.iot.android.skidbike"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".view.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".view.RegistActivity"
+            android:label="@string/title_activity_regist" >
+        </activity>
+        <activity
+            android:name=".view.SpeedActivity"
+            android:label="@string/title_activity_speed" >
+            
+        </activity>
+        <activity
+            android:name=".SpeedGuageActivity"
+            android:label="@string/title_activity_speed_guage" >
+        </activity>
+        <activity
+            android:name=".view.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+
+        <service android:name=".view.LoggingService" >
+            <intent-filter>
+                <action android:name="edu.rapa.iot.android.loggingservice" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".view.RideLogActivity"
+            android:label="@string/title_activity_ride_log" >
+        </activity>
+        <activity
+            android:name=".view.SplashActivity"
+            android:label="@string/app_name" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+           
+        </activity>
+        <activity
+            android:name="edu.rapa.iot.android.skidbike.view.RideDetailActivity"
+            android:label="@string/title_activity_ride_detail" >
+        </activity>
+        <receiver android:name=".view.SBWidget">
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_configuration"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="edu.rapa.iot.sbwidget.ACTION_EVENT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".view.ImageService"></service>
+        <service android:name=".util.GpsInfo"></service>
+    </application>
+
+</manifest>

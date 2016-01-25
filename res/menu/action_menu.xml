@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:title="flash"
+        android:showAsAction="always"
+        android:icon="@drawable/light_bulb_on_64" />
+
+    <item
+        android:title="select"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_dialog_map" />
+ 
+    
+</menu>

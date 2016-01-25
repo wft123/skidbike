@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/map_Fragment_LocationOnOff_Btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:alpha="0.35"
+        android:background="@drawable/map_icon_locationpng"
+        />
+
+    <Button
+        android:id="@+id/map_Storage_Btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.35"
+        android:background="@drawable/map_icon_storage" />
+
+    <Button
+        android:id="@+id/map_rental_Btn"
+       android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/map_Storage_Btn"
+        android:background="@drawable/map_icon_rental"
+        android:alpha="0.35"
+        />
+
+    <Button
+        android:id="@+id/map_Repair_Btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/map_rental_Btn"
+        android:background="@drawable/map_icon_repair"
+        android:alpha="0.35"
+         />
+
+    <Button
+        android:id="@+id/map_facility_Btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/map_Repair_Btn"
+        android:background="@drawable/map_icon_facility"
+        android:alpha="0.35"
+         />
+
+    <Button
+        android:id="@+id/map_Road_Btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/map_facility_Btn"
+        android:background="@drawable/map_icon_road"
+        android:alpha="0.35"
+         />
+
+</RelativeLayout>

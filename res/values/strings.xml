@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SkidBike</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_regist">회원가입</string>
+    <string name="checkBoxTitle">자동 로그인</string>
+    <string name="loginBtn">로그인</string>
+    <string name="registBtn">회원가입</string>
+    <string name="email_hint">ex) user@example.com</string>
+    <string name="password_not_correct">비밀번호가 일치하지 않습니다</string>
+    <string name="isEmpty">모든 정보를 입력 해주세요</string>
+    <string name="is_not_valid">이메일 형식이 맞지 않습니다.</string>
+    <string name="success_join">회원가입 되었습니다.</string>
+    <string name="ok">확  인</string>
+    <string name="logout">로그아웃</string>
+    <string name="deactivate">회원탈퇴</string>
+    <string name="locationCollectTime">위치정보 수집간격 설정</string>
+    <string name="keep_screen">화면 꺼짐 방지</string>
+    <string name="maxSpeed">최고속도</string>
+    <string name="avgSpeed">평균속도</string>
+    <string name="odometer">주행거리</string>
+    <string name="recodedTime">기록시간</string>
+    <string name="currentTime">현재시간</string>
+    <string name="title_activity_speed">속도계</string>
+    <string name="record_Mode_But_Start">기록시작</string>
+    <string name="record_Mode_But_End">기록종료</string>
+    <string name="title_activity_speed_guage">SpeedGuageActivity</string>
+    <string name="title_activity_setting">환경설정</string>
+    <string name="main_SpeedActivity_But">주행</string>
+    <string name="main_RideLogActivity_But">기록</string>
+    <string name="main_Wether_Loading">날씨를 불러오는중!</string>
+    <string name="title_activity_main">메인화면</string>
+    <string name="log_del">기록 삭제</string>
+
+    <string-array name="loc_time_array">
+        <item>1분</item>
+        <item>5분</item>
+        <item>10분</item>
+        <item>15분</item>
+        <item>20분</item>
+        <item>25분</item>
+        <item>30분</item>
+        <item>45분</item>
+        <item>60분</item>
+    </string-array>
+
+    <string name="title_activity_ride_log">기록</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_ride_detail">나의 주행 기록</string>
+
+</resources>

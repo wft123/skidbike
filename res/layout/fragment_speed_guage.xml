@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:custom="http://schemas.android.com/apk/res/edu.rapa.iot.android.skidbike"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<edu.rapa.iot.android.skidbike.util.Speedometer
+			android:id="@+id/Speedometer"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    custom:currentSpeed="0"
+		    custom:maxSpeed="60" />
+	</RelativeLayout>
